@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="Kawal Seputar Covid-19 di Indonesia"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvKonfirmasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tvKonfirmasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="53029"
+                android:textSize="24dp"
+                android:layout_margin="10dp"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_below="@id/tvKonfirmasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Konfirmasi"
+                android:textSize="24dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvPerawatan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cvKonfirmasi"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tvPerawatan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="53029"
+                android:textSize="24dp"
+                android:layout_margin="10dp"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_below="@id/tvPerawatan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dalam Perawatan"
+                android:textSize="24dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvSembuh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cvPerawatan"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tvSembuh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="53029"
+                android:textSize="24dp"
+                android:layout_margin="10dp"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_below="@id/tvSembuh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sembuh"
+                android:textSize="24dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvMeninggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cvSembuh"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tvMeninggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="53029"
+                android:textSize="24dp"
+                android:layout_margin="10dp"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_below="@id/tvMeninggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meninggal"
+                android:textSize="24dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/tvPerProvinsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cvMeninggal"
+        android:textSize="24sp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="DataProvinsi"
+        android:text="Jumlah Kasus Per Provinsi"/>
+
+
+
+
+</RelativeLayout>
